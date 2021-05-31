@@ -1,0 +1,11 @@
+main
+*.tgz
+
+.deps/
+build/
+
+heur/
+exact/
+results/
+
+.vscode/
