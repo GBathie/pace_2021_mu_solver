@@ -31,7 +31,7 @@ int main()
 	cin.tie(0);
 	ios::sync_with_stdio(false);
 
-	vector<int> opt(30);
+	vector<int> opt(50);
 	iota(opt.begin(), opt.end(), 5);
 
 	auto gs = KernelizedMultiCCInstance::from_cin();
