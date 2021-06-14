@@ -19,4 +19,5 @@ The program then runs until it receives a `SIGTERM` or `SIGKILL` (CTRL+C) signal
 
 ## Description of the algorithm
 
-See `solver_description.pdf`.
+See `solver_description.pdf`. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4947325.svg)](https://doi.org/10.5281/zenodo.4947325)
+
