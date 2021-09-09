@@ -13,7 +13,7 @@ int union_find::find(int a)
 {
 	int root = a, next;
 	while (parent[root] != root)
-		parent[root] = root;
+		root = parent[root];
 
 	while (parent[a] != root) 
 	{
