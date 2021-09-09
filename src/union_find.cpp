@@ -10,12 +10,19 @@ union_find::union_find(int n) : parent(n), count(n, 1)
 }
 
 int union_find::find(int a) 
-{ 
-	while (parent[parent[a]] != parent[a])
+{
+	int root = a, next;
+	while (parent[root] != root)
+		parent[root] = root;
+
+	while (parent[a] != root) 
 	{
-		parent[a] = parent[parent[a]];
+		next = parent[a];
+		parent[a] = root;
+		a = next;
 	}
-	return parent[a];
+
+	return root;
 }
 
 bool union_find::merge(int a, int b) 
